@@ -27,13 +27,26 @@ namespace Steamworks
 		internal const int STEAM_CONTROLLER_MAX_COUNT = 16;
 
 		/// <summary>
+		/// Initialize Steam Input.
 		/// Must be called when starting use of the ISteamInput interface.
+		/// You will not receive any input data or information about controllers until this is called.
 		/// </summary>
-		public static void Init( bool explicitlyCallRunFrame = false )
+		/// <param name="explicitlyCallRunFrame">If true, you must call <see cref="RunFrame"/> yourself.</param>
+		/// <returns>bool - Always returns true.</returns>
+		public static bool Init( bool explicitlyCallRunFrame = false )
 		{
-			Internal.Init( explicitlyCallRunFrame );
+			return Internal.Init( explicitlyCallRunFrame );
 		}
 
+		/// <summary>
+		/// Shutdown Steam Input.
+		/// Must be called when ending use of the ISteamInput interface.
+		/// </summary>
+		/// <returns>bool - Always returns true.</returns>
+		public static bool Shutdown()
+		{
+			return Internal.Shutdown();
+		}
 
 		/// <summary>
 		/// You shouldn't really need to call this because it gets called by <see cref="SteamClient.RunCallbacks"/>
@@ -134,7 +147,6 @@ namespace Steamworks
 		public static string GetDigitalActionGlyph( Controller controller, string action )
         {
             InputActionOrigin origin = InputActionOrigin.None;
-			InputActionOrigin[] origins = new InputActionOrigin[16]; 
 
 			int originCount = Internal.GetDigitalActionOrigins(
                 controller.Handle,
