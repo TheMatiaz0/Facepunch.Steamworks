@@ -1,6 +1,7 @@
 {
   "name": "com.thematiaz0.facepunch.steamworks",
   "displayName": "Facepunch.Steamworks",
+  "author": "Facepunch",
   "version": "1.61.0",
   "unity": "2021.3",
   "description": "\"Another fucking c# Steamworks implementation\"\nUpdated to use Steamworks 1.61 and adds support for Steam Input.",
