@@ -782,7 +782,7 @@ namespace Steamworks
 	//
 	// ERemoteStoragePublishedFileVisibility
 	//
-	internal enum RemoteStoragePublishedFileVisibility : int
+	public enum RemoteStoragePublishedFileVisibility : int
 	{
 		Public = 0,
 		FriendsOnly = 1,
