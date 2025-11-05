@@ -76,6 +76,24 @@ namespace Steamworks
 			}
 		}
 
+		/// <summary>
+		/// Gets the gamepad index associated with the controller.
+		/// </summary>
+		public static int GetGamepadIndexForController( Controller controller )
+		{
+			return Internal.GetGamepadIndexForController( controller.Handle );
+		}
+
+		/// <summary>
+		/// Translates an action origin to the same physical input for a different controller type.
+		/// </summary>
+		/// <param name="destinationInputType"></param>
+		/// <param name="sourceOrigin"></param>
+		/// <returns></returns>
+		public static InputActionOrigin TranslateActionOrigin( InputType destinationInputType, InputActionOrigin sourceOrigin )
+		{
+			return Internal.TranslateActionOrigin( destinationInputType, sourceOrigin );
+		}
 
 		/// <summary>
 		/// Return an absolute path to the PNG image glyph for the provided analog action name. The current

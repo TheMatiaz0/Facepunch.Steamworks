@@ -14,6 +14,7 @@ namespace Steamworks
 		}
 
 		public ulong Id => Handle.Value;
+		public int GamepadIndex => SteamInput.Internal.GetGamepadIndexForController( Handle );
 		public InputType InputType => SteamInput.Internal.GetInputTypeForHandle( Handle );
 
 		/// <summary>
