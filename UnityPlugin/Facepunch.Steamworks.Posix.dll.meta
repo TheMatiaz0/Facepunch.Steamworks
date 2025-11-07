@@ -6,8 +6,7 @@ PluginImporter:
   iconMap: {}
   executionOrder: {}
   defineConstraints:
-  - UNITY_EDITOR_OSX || UNITY_EDITOR_LINUX
-  - UNITY_STANDALONE_OSX || UNITY_STANDALONE_LINUX
+  - UNITY_EDITOR_OSX || UNITY_EDITOR_LINUX || UNITY_STANDALONE_OSX || UNITY_STANDALONE_LINUX
   isPreloaded: 0
   isOverridable: 0
   isExplicitlyReferenced: 0
