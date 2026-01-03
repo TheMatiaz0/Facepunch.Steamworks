@@ -32,7 +32,7 @@ This fork couldn't be done without these contributors:
 - [@tooda02](https://github.com/tooda02)
 - [@paradox-glitch](https://github.com/paradox-glitch)
 
-It's tested regularly on production with Telegraphist 1920 game, so there shouldn't be any critical bugs, but if you find anything please let me know in the [Issues](https://github.com/TheMatiaz0/Facepunch.Steamworks/issues) tab. Thanks! ^^
+It's tested regularly on production with Telegraphist 1920 game (with Unity 6000.0.58f2), so there shouldn't be any critical bugs, but if you find anything please let me know in the [Issues](https://github.com/TheMatiaz0/Facepunch.Steamworks/issues) tab. Thanks! ^^
 
 # Facepunch.Steamworks
 
