@@ -1,3 +1,39 @@
+# Fork Notes
+
+As Facepunch.Steamworks repository is rarely maintained, I've decided to create my own fork based on some of community fixes/improvements.
+
+## What it does?
+- Improves support for [Steam Input API](https://partner.steamgames.com/doc/features/steam_controller).
+- Adds a Unity package that can be easily installed through UPM (Unity Package Manager).
+- Adds [FileVisibility](https://partner.steamgames.com/doc/api/isteamremotestorage) integration for Steam Workshop API (if you want to differentiate between Public, Friends Only and Private).
+- Fixes Unity Editor Linux support, allowing for CI/CD to build on Linux.
+
+**Works on Windows, OSX and Steam Deck/Linux builds, along with Unity Editor on Linux (CI/CD).**
+
+Note: If you are looking for Unity asset to display images for inputs, check my Facepunch port of [InputGlyphs](https://github.com/TheMatiaz0/InputGlyphs) made by eviltwo.
+
+## How to install?
+
+### Install via UPM
+
+- Click Window > Package Manager
+- Click + > Add package from git URL... and input the repository URL: `https://github.com/TheMatiaz0/Facepunch.Steamworks.git?path=UnityPlugin`
+
+Note: This solution only works for projects where everyone has [Git](https://git-scm.com/install/) locally installed on their computers. If you don't want that, please use below Embedded Package solution.
+
+### Install as Embedded Package
+
+- Download the `UnityPlugin.zip` from the [Releases](https://github.com/TheMatiaz0/Facepunch.Steamworks/releases) tab 
+- Extract the downloaded zip.
+- Move the extracted UnityPlugin folder into the `Packages` directory in the root Unity project folder.
+
+## Contributions
+This fork couldn't be done without these contributors:
+- [@tooda02](https://github.com/tooda02)
+- [@paradox-glitch](https://github.com/paradox-glitch)
+
+It's tested regularly on production with Telegraphist 1920 game, so there shouldn't be any critical bugs, but if you find anything please let me know in the Issues tab. Thanks! ^^
+
 # Facepunch.Steamworks
 
 [Another fucking c# Steamworks implementation](https://wiki.facepunch.com/steamworks/)
