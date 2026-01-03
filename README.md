@@ -1,6 +1,6 @@
 # Fork Notes
 
-As Facepunch.Steamworks repository is rarely maintained, I've decided to create my own fork based on some of community fixes/improvements.
+As Facepunch.Steamworks repository is rarely maintained, I've decided to create my own fork based on some of community fixes/improvements. Based on [Facepunch.Steamworks 2.4.1](https://github.com/Facepunch/Facepunch.Steamworks/releases/tag/2.4.1).
 
 ## What it does?
 - Improves support for [Steam Input API](https://partner.steamgames.com/doc/features/steam_controller).
