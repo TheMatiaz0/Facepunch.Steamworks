@@ -4,7 +4,7 @@
   "author": "Facepunch",
   "version": "1.61.0",
   "unity": "2021.3",
-  "description": "\"Another fucking c# Steamworks implementation\"\nUpdated to use Steamworks 1.61 and adds support for Steam Input.",
+  "description": "\"Another fucking c# Steamworks implementation\"\nUpdated for Steam Deck support, Steam Workshop fixes and CI/CD fix for Linux build machines.",
   "keywords": [
     "steamworks",
     "steam"
